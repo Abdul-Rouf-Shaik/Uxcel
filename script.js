@@ -15,4 +15,15 @@ clr.addEventListener("click", () => {
 });
 
 
+gsap.to("#page2 .left img,#page2 .right img ", {
+    transform: "scale(1.6)",
+    scrollTrigger: {
+        // markers: true,
+        trigger: "#page2",
+        start: "top 80%",
+        end: "bottom 10%",
+        scrub: 2
+    }
+})
+
 
